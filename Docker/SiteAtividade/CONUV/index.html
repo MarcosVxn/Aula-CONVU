@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Computing — AWS, Azure e GCP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="#inicio" class="logo">Cloud<span>Atlas</span></a>
+
+      <nav>
+        <a href="#provedores">Provedores</a>
+        <a href="#modelos">Modelos</a>
+        <a href="#infra">Infraestrutura</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#seguranca">Segurança</a>
+        <a href="#comparacao">Comparação</a>
+      </nav>
+
+      <button id="themeButton" class="theme-button" type="button">☼</button>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">COMPUTAÇÃO EM NUVEM</p>
+        <h1>AWS, Azure e GCP<br><span>em um só lugar.</span></h1>
+        <p class="lead">
+          Um guia simples para entender computação em nuvem,
+          modelos de serviço, infraestrutura, serviços e segurança.
+        </p>
+        <a href="#provedores" class="button">Começar</a>
+      </div>
+    </section>
+
+    <section class="section" id="provedores">
+      <div class="container">
+        <p class="eyebrow">01 / PROVEDORES</p>
+        <h2>Os três principais provedores</h2>
+        <p class="section-intro">
+          Cada provedor possui características e focos estratégicos diferentes.
+        </p>
+
+        <div class="grid-3">
+          <article class="card provider aws">
+            <small>AWS</small>
+            <h3>Amazon Web Services</h3>
+            <p>Maturidade, grande variedade de serviços e ecossistema amplo.</p>
+          </article>
+
+          <article class="card provider azure">
+            <small>AZURE</small>
+            <h3>Microsoft Azure</h3>
+            <p>Integração com o ecossistema Microsoft e ambientes híbridos.</p>
+          </article>
+
+          <article class="card provider gcp">
+            <small>GCP</small>
+            <h3>Google Cloud Platform</h3>
+            <p>Dados, inteligência artificial, contêineres e inovação.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted-section" id="modelos">
+      <div class="container">
+        <p class="eyebrow">02 / MODELOS DE SERVIÇO</p>
+        <h2>IaaS, PaaS e SaaS</h2>
+        <p class="section-intro">
+          Os modelos definem quanto da infraestrutura fica sob responsabilidade
+          do provedor e quanto fica sob responsabilidade do cliente.
+        </p>
+
+        <div class="grid-3">
+          <article class="card">
+            <span class="number">01</span>
+            <h3>IaaS</h3>
+            <p>Infrastructure as a Service.</p>
+            <p class="muted">
+              Mais controle sobre sistema operacional, rede e infraestrutura virtual.
+            </p>
+            <strong>Ex.: EC2, Azure VM, Compute Engine</strong>
+          </article>
+
+          <article class="card">
+            <span class="number">02</span>
+            <h3>PaaS</h3>
+            <p>Platform as a Service.</p>
+            <p class="muted">
+              O provedor gerencia a infraestrutura e o desenvolvedor foca no código e nos dados.
+            </p>
+            <strong>Ex.: Elastic Beanstalk, App Service, App Engine</strong>
+          </article>
+
+          <article class="card">
+            <span class="number">03</span>
+            <h3>SaaS</h3>
+            <p>Software as a Service.</p>
+            <p class="muted">
+              Aplicação pronta para uso, acessada pelo usuário sem gerenciar servidores.
+            </p>
+            <strong>Ex.: Google Workspace, Microsoft 365</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="infra">
+      <div class="container">
+        <p class="eyebrow">03 / INFRAESTRUTURA GLOBAL</p>
+        <h2>Regiões e zonas de disponibilidade</h2>
+        <p class="section-intro">
+          A distribuição global ajuda a reduzir latência, aumentar disponibilidade
+          e melhorar a resiliência das aplicações.
+        </p>
+
+        <div class="info-grid">
+          <article class="card">
+            <h3>Região</h3>
+            <p>
+              Área geográfica onde um provedor mantém um conjunto de
+              data centers interconectados.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Zona de disponibilidade</h3>
+            <p>
+              Infraestrutura isolada dentro de uma região para ajudar
+              na tolerância a falhas.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Latência</h3>
+            <p>
+              Quanto menor a distância entre o usuário e a infraestrutura,
+              menor tende a ser o tempo de resposta.
+            </p>
+          </article>
+        </div>
+
+        <div class="stats-row">
+          <div>
+            <strong>AWS</strong>
+            <span>39 regiões / 124 AZs</span>
+          </div>
+          <div>
+            <strong>Azure</strong>
+            <span>70+ regiões / 400+ data centers</span>
+          </div>
+          <div>
+            <strong>GCP</strong>
+            <span>38 regiões / 115 AZs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted-section" id="servicos">
+      <div class="container">
+        <p class="eyebrow">04 / PRINCIPAIS SERVIÇOS</p>
+        <h2>Serviços equivalentes</h2>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Categoria</th>
+                <th>AWS</th>
+                <th>Azure</th>
+                <th>GCP</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Computação</td>
+                <td>Amazon EC2</td>
+                <td>Azure Virtual Machines</td>
+                <td>Compute Engine</td>
+              </tr>
+              <tr>
+                <td>Armazenamento</td>
+                <td>Amazon S3</td>
+                <td>Blob Storage</td>
+                <td>Cloud Storage</td>
+              </tr>
+              <tr>
+                <td>Banco relacional</td>
+                <td>Amazon RDS / Aurora</td>
+                <td>Azure SQL Database</td>
+                <td>Cloud SQL / Spanner</td>
+              </tr>
+              <tr>
+                <td>Banco NoSQL</td>
+                <td>DynamoDB</td>
+                <td>Cosmos DB</td>
+                <td>Firestore / Bigtable</td>
+              </tr>
+              <tr>
+                <td>IAM</td>
+                <td>AWS IAM</td>
+                <td>Microsoft Entra ID</td>
+                <td>Cloud IAM / IAP</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="seguranca">
+      <div class="container">
+        <p class="eyebrow">05 / SEGURANÇA</p>
+        <h2>Responsabilidade compartilhada</h2>
+
+        <div class="grid-2">
+          <article class="card">
+            <span class="tag">PROVEDOR</span>
+            <h3>Segurança da nuvem</h3>
+            <ul>
+              <li>Data centers e hardware</li>
+              <li>Infraestrutura física</li>
+              <li>Rede física</li>
+              <li>Hipervisor</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <span class="tag purple">CLIENTE</span>
+            <h3>Segurança na nuvem</h3>
+            <ul>
+              <li>Configurações de firewall</li>
+              <li>Credenciais e chaves</li>
+              <li>Patches do sistema</li>
+              <li>Proteção dos próprios dados</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="tools">
+          <div><strong>AWS</strong><span>IAM · KMS · Security Hub · GuardDuty</span></div>
+          <div><strong>Azure</strong><span>Entra ID · Key Vault · Defender for Cloud</span></div>
+          <div><strong>GCP</strong><span>Cloud IAM · KMS · Security Command Center</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted-section" id="comparacao">
+      <div class="container">
+        <p class="eyebrow">06 / COMPARAÇÃO</p>
+        <h2>Qual combina mais com cada cenário?</h2>
+
+        <div class="compare">
+          <article class="card">
+            <small>AWS</small>
+            <h3>Escala e maturidade</h3>
+            <p>
+              O material destaca a AWS para cenários que valorizam catálogo amplo,
+              maturidade operacional e escala complexa.
+            </p>
+          </article>
+
+          <article class="card">
+            <small>AZURE</small>
+            <h3>Ambiente Microsoft</h3>
+            <p>
+              O material destaca o Azure para ambientes corporativos
+              integrados ao ecossistema Microsoft e estratégias híbridas.
+            </p>
+          </article>
+
+          <article class="card">
+            <small>GCP</small>
+            <h3>Dados e IA</h3>
+            <p>
+              O material destaca o GCP para cenários com Big Data,
+              inteligência artificial, contêineres e inovação.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <strong>CloudAtlas</strong>
+      <span>Pesquisa comparativa: AWS vs Azure vs GCP.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
